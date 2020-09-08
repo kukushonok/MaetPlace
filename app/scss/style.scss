@@ -1,7 +1,122 @@
 @import 'vars';
 @import 'global';
 
-body{
-    background-color: #fff;
+
+/* Header Starts */
+
+.header{
+    background-color: $light-bg;
+    padding: 25px 0;
+    
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__top-content{
+    display: flex;
+    align-items: center;    
+}
+.header__btn{
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    background-color: $blue;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: all .3s;
+}
+.header__btn:hover{
+    background-color:transparent;
+    border: 1px solid $blue;
+    color: $text-blue;
+}
+.header__icons{
+    margin-left: 45px;
+    margin-right: 35px;
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 30px;
+        }
+    }
+}
+.header__btn{
+    margin-left: auto;
+}
+.header__user{
+    display: flex;
+    align-items: center;
+    &-img a{
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+       background-color: $dark-grey;
+    }
+    &-name{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        margin-left: 24px;
+    }
+    &-number{
+        margin-left: 24px;
+        font-size: 15px;
+        color: $text-blue;
+    }
 }
 
+/* Header Ends */
+
+/* Navigation Starts */
+.navigation{
+    margin-top: 27px;
+}
+.navigation__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 30px;
+        }
+    }
+    a{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        transition: all .3s;
+    }
+    a:hover{
+        color: $text-blue;
+    }
+}
+.navigation__search{
+    position: relative;
+    input{
+        min-width: 360px;
+        padding: 13px 25px;
+        outline: none;
+        border: 1px solid #d9dfe5;
+        border-radius: 30px; 
+        &placeholder{
+            color: #898f96;
+        }
+    }
+    button{
+        background-color: $blue;
+        outline: none;
+        border: none;
+        width: 70px;
+        height: 46px;
+        border-radius: 30px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+/* Navigation Ends */
