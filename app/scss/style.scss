@@ -489,20 +489,8 @@
     display: none;
     cursor: pointer;
 }
-.hover-btn{
-    font-weight: 500;
-    font-size: 15px;
-    color: #fff;
-    padding:15px 30px;
-    border: 1px solid #fff;
-    border-radius: 30px;
-    transition: all .4s;
-}
-.hover-btn:hover{
-    background-color: #fff;
-    color: $blue;
-}
-.newest__item:hover{
+.newest__item:hover,
+.feeds__item:hover{
     .item__hover-content{
         display: block;
     }
@@ -643,3 +631,40 @@
     }
 }
 /* Advantages Ends */
+
+/* Sell & Buy Starts  */
+.sell-buy{
+    padding: 130px 0 100px;
+}
+.sell-buy__inner{
+    color: #fff;
+    display: flex;
+}
+.sell-buy__item{
+    min-width: 585px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 200px; 
+    text-align: center;
+    &-img{
+        font-size: 36px;
+    } 
+    &-title{
+        margin-top: 45px;
+        margin-bottom: 25px;
+        font-size: 36px;
+    } 
+    &-btn{
+        margin-top: 48px;
+    }
+}
+.sell__item-btn:hover{
+    color: $blue;
+    background-color: #fff;
+}
+.buy__item-btn:hover{
+    color: $violet;
+    background-color: #fff;
+}
+/* Sell & Buy Ends  */
