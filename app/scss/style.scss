@@ -550,3 +550,39 @@
     background-color: $blue;
 }
 /* Feeds Ends */
+
+/* Statistics Starts  */
+.statistics{
+    background-color: $dark-bg;
+    padding: 90px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: baseline;
+    }
+}
+.statistics__item{
+    max-width: 155px;
+    &-numb{
+        color: #feb71d;
+        font-size: 36px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    &-title{
+        color: #fff;
+        font-size: 18px;
+        line-height: 36px;
+    }
+}
+.blue-numb{
+    color: $blue;
+}
+.green-numb{
+    color: #77de51;
+}
+.red-numb{
+    color: #ff6a6d;
+}
+/* Statistics Ends */
