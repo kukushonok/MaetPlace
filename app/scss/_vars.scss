@@ -11,6 +11,9 @@ $dark-bg: #212225;
 @mixin shadow {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
 }
+@mixin big-shadow {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+}
 @mixin btn-hover {
     background-color: $blue;
     color: #fff;
