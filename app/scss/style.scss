@@ -583,18 +583,6 @@
 .advantages__top{
     max-width: 680px;
     margin: 0 auto;
-    &-title{
-        font-size: 36px;
-        margin-bottom: 20px;
-        span{
-            color: $blue;
-        }
-    }
-    &-text{
-        color: #555;
-        margin-bottom: 55px;
-        line-height: 25px;
-    }
 }
 .advantages__inner{
     display: flex;
@@ -668,3 +656,69 @@
     background-color: #fff;
 }
 /* Sell & Buy Ends  */
+
+/* Feedback Starts */
+.feedback{
+    padding-bottom: 120px;
+}
+.feedback__top{
+    margin: 0 auto;
+    text-align: center;
+    
+    &-text{
+        margin: 0 auto;
+    }
+}
+.feedback__inner{
+    display: flex;
+}
+.feedback__box{
+    margin-top: 57px;
+    background-color: #fff;
+    @include big-shadow ;
+    max-width: 555px;
+    border-left: 1px solid $blue;
+    padding: 0 42px;
+    position: relative;
+    color: #555;
+    margin-bottom: 60px;
+    &-img{
+        position: absolute;
+        top: 55px;
+        right: 42px;
+    }
+    &-text{
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+}
+.feedback__user{
+    display: flex;
+    align-items: center;
+    margin: 50px 0 25px;
+    &-info{
+        margin-left: 20px;
+    }
+    &-name{
+        font-size: 20px;
+        color: #000;
+    }
+}
+.feedback__box:nth-child(2){
+    margin-left: 30px;
+}
+.all-feedbacks__btn{
+    display: flex;
+    justify-content: center;
+}
+.feedbacks__btn{
+    background-color: $blue;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+.feedbacks__btn:hover{
+    background-color: #e6f1fd;
+    color: $blue;
+}
+/* Feedback Ends */

@@ -40,6 +40,20 @@ body{
     border-radius: 5px;
     @include shadow;
 }
+.top-title{
+    font-size: 36px;
+    margin-bottom: 20px;
+    span{
+        color: $blue;
+    }
+}
+.top-text{
+    color: #555;
+    margin-bottom: 55px;
+    line-height: 25px;
+    max-width: 680px;
+}
+
 .btn{
     color: $light-grey;
     font-size: 15px;
