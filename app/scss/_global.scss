@@ -68,3 +68,10 @@ body{
     color: #fff;
     font-weight: 500;
 }
+.item{
+    max-width: 361px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    @include shadow;    
+}
