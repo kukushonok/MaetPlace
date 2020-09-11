@@ -17,6 +17,10 @@ ul{
     padding: 0;
     list-style: none;
 }
+button{
+    cursor: pointer;
+    border: none;
+}
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -34,4 +38,33 @@ body{
     color: #000;
     padding: 30px;
     border-radius: 5px;
+    @include shadow;
+}
+.btn{
+    color: $light-grey;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: $light-bg;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+.item-title{
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.blue-btn{
+    background-color: #e6f1fd;
+    color: $blue;
+    padding: 0 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    transition: all .3s;
+}
+.blue-btn:hover{
+    background-color: $blue;
+    color: #fff;
+    font-weight: 500;
 }

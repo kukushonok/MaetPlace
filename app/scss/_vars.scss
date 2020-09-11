@@ -1,7 +1,17 @@
 $light-bg: #eef1f3;
+$grey-bg: #f6f7fb;
 $blue: #0674ec;
 $violet: #7347c1;
 $text: #333;
 $dark-grey: #7c7979;
 $light-grey: #868c96;
 $border-color: #d9dfe5;
+
+@mixin shadow {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+}
+@mixin btn-hover {
+    background-color: $blue;
+    color: #fff;
+    font-weight: 500;
+}
