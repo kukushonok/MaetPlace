@@ -27,6 +27,21 @@ body{
     font-size: 16px;
     color: $text;
 }
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
 .container{
     max-width: 1170px;
     padding: 0 15px;
@@ -101,4 +116,12 @@ body{
 .light-btn:hover{
     background-color: #fff;
     color: $blue;
+}
+.aside__item{
+    background-color: #fff;
+    padding: 30px;
+    @include shadow; 
+    margin-bottom: 30px;
+    max-width: 263px;
+    border-radius: 5px;
 }
