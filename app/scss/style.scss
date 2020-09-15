@@ -1157,15 +1157,21 @@ form{
     margin-left: 30px;
     li{
         display: inline-block;
+        
         button{
             background-color: transparent;
+            outline: none;
             span{
                 font-size: 24px;
                 color: #747b86;  
+                &.active{
+                    color: $blue;
+                }
             }
-        }
-    }
+        }       
+    }    
 }
+
 /* Filter Ends */
 
 /* Page Products Starts */
@@ -1182,8 +1188,8 @@ form{
     position: relative;
 }
 .page-producrs__aside{
-    max-width: 260px;
-    width: 100%;
+    min-width: 260px;
+    margin-right: 25px;
     &-title{
         font-size: 20px;
         color: #000;
@@ -1285,13 +1291,13 @@ form{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
-    margin-left: 30px;
     .newest__item{
         background-color: #fff;
         display: inline-block;
         max-width: 262px;
         border-radius: 5px;
         margin: 10px;
+        
         &-content{
             padding: 0 20px;
         }
@@ -1348,6 +1354,7 @@ form{
         font-size: 16px;
         padding:13px 25px;
         border-radius: 30px; 
+        outline: none;
     }  
     button.active{
         background-color: $violet;
@@ -1360,4 +1367,147 @@ form{
         margin-left: 20px;
     }  
 }
+.item__bottom-cart span{
+    top: 0;
+}
+
 /* Page Products Ends */
+
+/* Page Products List Starts */
+.newest__item-title-text,
+.item__user-categoty{
+    display: none;
+}
+.item__user-comments{
+    display: none;
+       
+}
+.item__user-img-likes{
+    display: none;
+}
+.newest__bottom-stars{
+    span{
+        display: none;
+    }
+}
+
+.price-category{
+    display: none;
+}
+.newest__item{
+    &.list{
+        min-width: 850px;
+        width: 100%;
+        display: flex;
+        height: 210px;
+        .newest__item-img{
+            min-height: 210px;
+        }
+        .newest__item-title-text,
+        .item__user-categoty{
+            display: inline-block;
+        }
+        .newest__item-title-text{
+            font-size: 16px;
+            color: #555;
+            margin: 20px 0;
+            line-height: 30px;
+            margin-top: 15px;
+        }
+        .newest__item-title{
+            width: 220px;
+            font-weight: 500;
+            font-size: 18px;       
+        }
+        .newest__item-content{
+            display: flex;
+            position: relative;
+            padding: 0 20px;
+        }
+        .item__user-categoty{
+            position: absolute;
+            left: 20px;
+            bottom: 35px;
+            margin: 0;
+        }
+        .newest__bottom-stars {
+            margin: 0;
+            position: absolute;
+            left: 277px;
+            bottom: 35px;
+        }
+        .newest__item-user{
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            margin-top: 50px;
+            padding-left: 18px;
+            border-left: 1px solid #ececec;
+            margin-left: 20px;
+        }
+        .item__user-img{
+            position: absolute;
+            top: -5px;
+        }
+        .item__user-name{
+            padding-left: 40px;
+            margin-bottom: 25px;
+        }
+        .item__user-comments{
+            display: inline-block;
+            color: #6f7d8d;
+            margin-bottom: 15px;
+            span{
+                color: $violet;
+            }
+               
+        }
+        .item__user-img-likes{
+            display: inline-block;
+            color: #6f7d8d;
+            margin-bottom: 10px;
+            span{
+                color: $violet;
+            }
+        }
+        .newest__bottom-stars{
+            display: flex;
+            align-items: center;
+            span{
+                display: inline-block;
+                color: #6f7d8d;
+                margin-left: 9px;
+            }
+        }
+        .item__bottom-cart{
+            position: absolute;
+            bottom: 45px;
+            margin-left: 67px
+        }
+        .newest__item-bottom{
+            border: none;  
+            margin: 0;
+            padding: 0;
+        }
+        .item__bottom-left{
+            border-left: 1px solid #ececec;
+            padding-left: 25px;
+            margin-left: 18px;
+        }
+        .item__bottom-price{
+            display: none;
+        }
+        .price-category{
+            display: inline-block;
+            background-color: #e6f1fd;
+            color: $blue;
+            padding: 9px 20px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
+
+    
+/* Page Products List Ends */
